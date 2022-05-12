@@ -1,10 +1,22 @@
-import Test from './views/test/Test.jsx'
-function App() {
-  return (
-    <div>
-      <Test></Test>
-    </div>
-  );
-}
+import React, { memo } from 'react'
 
-export default App;
+import { HashRouter as Router } from 'react-router-dom';
+
+import GetRoutes from './router'
+
+import AppHeader from '@/components/app-header'
+import AppFooter from '@/components/app-footer'
+export default memo(
+  function App() {
+    return (
+      <div>
+        <Router>
+          <AppHeader/>
+            <GetRoutes/>
+          <AppFooter/>
+        </Router>
+      </div>
+    )
+  }
+)
+
