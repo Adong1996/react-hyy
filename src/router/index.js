@@ -1,4 +1,3 @@
-import react from 'react'
 import { useRoutes } from 'react-router-dom';
 import Discover from '@/pages/discover'
 import Friend from '@/pages/friend'
