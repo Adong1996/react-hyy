@@ -1,28 +1,16 @@
-import React, {memo, useEffect} from 'react';
+import React, {memo} from 'react';
 import { NavLink, Outlet } from "react-router-dom";
 
 import { 
   dicoverMenu
 } from "@/common/local-data";
 
-import request from "@/services/axios.js"
 import {
   DiscoverWrapper,
   TopMenu
 } from "./style";
 
-export default memo(function HYDiscover(props) {
-
-  useEffect(()=>{
-    request({
-      url: "/banner"
-    }).then(res => {
-      console.log(res,"333");
-    })
-  })
-
-  const { route } = props;
-
+export default memo(function HYDiscover() {
   return (
     <DiscoverWrapper>
       <div className="top">
