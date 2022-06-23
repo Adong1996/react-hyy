@@ -27,7 +27,6 @@ export default memo(function HYDiscover() {
             })
           }
         </TopMenu>
-        
       </div>
       <Outlet/>
     </DiscoverWrapper>

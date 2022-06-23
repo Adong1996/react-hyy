@@ -13,7 +13,6 @@ export default memo(function HYAppFooter() {
   return (
   <AppFooterWrapper>
     <Outlet />
-    <h1>--------</h1>
     <div className="wrap-v2 content">
       <FooterLeft className="left">
         <div className="link">
